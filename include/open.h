@@ -2,7 +2,7 @@
 #define __OPEN_H__
 
 int open(const char *pathname, int flags);
-int open(const char *pathname, int flags, unsigned char mode);
+int open(const char *pathname, int flags, unsigned int mode);
 
 #endif
 
