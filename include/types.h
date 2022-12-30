@@ -66,5 +66,34 @@ struct sockaddr {
   char sa_data[];
 };
 
+struct msghdr {
+  void *msg_name;
+  unsigned int msg_namelen;
+  struct iovec *msg_iov;
+  unsigned long msg_iovlen;
+  void *msg_control;
+  unsigned long msg_controllen;
+  int msg_flags;
+};
+
+struct rusage {
+  struct timeval ru_utime;
+  struct timeval ru_stime;
+  long ru_maxrss;
+  long ru_ixrss;
+  long ru_idrss;
+  long ru_isrss;
+  long ru_minflt;
+  long ru_majflt;
+  long ru_nswap;
+  long ru_inblock;
+  long ru_oublock;
+  long ru_msgsnd;
+  long ru_msgrcv;
+  long ru_nsignals;
+  long ru_nvcsw;
+  long ru_nivcsw;
+};
+
 #endif
 
