@@ -115,5 +115,10 @@ struct timezone {
   int tz_dsttime;
 };
 
+struct rlimit {
+  unsigned long rlim_cur;
+  unsigned long rlim_max;
+};
+
 #endif
 
