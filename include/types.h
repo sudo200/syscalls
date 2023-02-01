@@ -120,5 +120,21 @@ struct rlimit {
   unsigned long rlim_max;
 };
 
+struct sysinfo {
+  long uptime;
+  unsigned long loads[3];
+  unsigned long totalram;
+  unsigned long freeram;
+  unsigned long sharedram;
+  unsigned long bufferram;
+  unsigned long totalswap;
+  unsigned long freeswap;
+  unsigned short procs;
+  unsigned long totalhigh;
+  unsigned long freehigh;
+  unsigned int mem_unit;
+  char ___padding[20-2*sizeof(long)-sizeof(int)];
+};
+
 #endif
 
