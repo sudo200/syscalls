@@ -110,5 +110,10 @@ struct linux_dirent {
   char            d_name[];
 };
 
+struct timezone {
+  int tz_minuteswest;
+  int tz_dsttime;
+};
+
 #endif
 
