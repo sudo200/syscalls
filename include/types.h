@@ -136,5 +136,12 @@ struct sysinfo {
   char ___padding[20-2*sizeof(long)-sizeof(int)];
 };
 
+struct tms {
+  unsigned long tms_utime;
+  unsigned long tms_stime;
+  unsigned long tms_cutime;
+  unsigned long tms_cstime;
+};
+
 #endif
 
